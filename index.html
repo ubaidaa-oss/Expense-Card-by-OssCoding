@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Expenses chart component</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(118, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <div class="upper">
+      <div class="right-upper">
+        <div class="title">
+          My balance
+        </div>
+        <div class="amount">
+          <h2> $921.48</h2>
+        </div>
+      </div>
+      <div class="left-upper">
+        <img src="assets/images/logo.svg" alt="">
+      </div>
+    </div>
+
+    <div class="lower">
+      <div class="h1">
+        <h1> Spending - Last 7 days</h1>
+      </div>
+      <div class="graph">
+        <div class="lies">
+          <div class="bars one"></div>
+          <div class="day-name">mon</div>
+        </div>
+        <div class="lies">
+          <div class="bars two"></div>
+          <div class="day-name">tue</div>
+        </div>
+        <div class="lies" onmouseover="handlerOne()" onmouseleave="chandlerOne()">
+          <div class="overlay none">
+            $52.36
+          </div>
+          <div class="bars three"></div>
+          <div class="day-name">wed</div>
+        </div>
+        <div class="lies" onmouseover="handlerTwo()" onmouseleave="chandlerTwo()">
+          <div class="overlay2 none" >
+            $31.07
+          </div>
+          <div class="bars four"></div>
+          <div class="day-name">thu</div>
+        </div>
+        <div class="lies">
+          <div class="bars five"></div>
+          <div class="day-name">fri</div>
+        </div>
+        <div class="lies">
+          <div class="bars six"></div>
+          <div class="day-name">sat</div>
+        </div>
+        <div class="lies">
+          <div class="bars seven"></div>
+          <div class="day-name">sun</div>
+        </div>
+      </div>
+      <div class="done-box">
+        <div class="right-done">
+          <div class="done-title">
+            Total this month
+          </div>
+          <div class="done-amount">
+            <h2> $478.33</h2>
+          </div>
+        </div>
+        <div class="left-done">
+          <div class="percent">
+            <h2>
+              +2.4%
+            </h2>
+          </div>
+          <div class="last-month">
+            from last month
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!-- 
+  -->
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a target="_blank" href="https://github.com/ubaidrashid">Oss-Coding</a>.
+  </div>
+  <script src="assets/js/app.js"></script>
+</body>
+
+</html>
